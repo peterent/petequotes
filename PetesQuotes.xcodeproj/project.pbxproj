@@ -1,0 +1,568 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3210D1E32564505600179167 /* PetesQuotesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3210D1E22564505600179167 /* PetesQuotesApp.swift */; };
+		3210D1E52564505600179167 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3210D1E42564505600179167 /* ContentView.swift */; };
+		3210D1E72564505600179167 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3210D1E62564505600179167 /* Assets.xcassets */; };
+		3210D1EA2564505600179167 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3210D1E92564505600179167 /* Preview Assets.xcassets */; };
+		327BC2F425656106002EFDDF /* QuoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327BC2F325656106002EFDDF /* QuoteService.swift */; };
+		327BC2F8256561ED002EFDDF /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 327BC2F7256561ED002EFDDF /* Alamofire */; };
+		327BC30225658196002EFDDF /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 327BC30125658196002EFDDF /* WidgetKit.framework */; };
+		327BC30425658196002EFDDF /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 327BC30325658196002EFDDF /* SwiftUI.framework */; };
+		327BC30725658196002EFDDF /* PetesQuotes_Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327BC30625658196002EFDDF /* PetesQuotes_Widget.swift */; };
+		327BC30925658197002EFDDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 327BC30825658197002EFDDF /* Assets.xcassets */; };
+		327BC30D25658197002EFDDF /* PetesQuotes_WidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 327BC2FF25658196002EFDDF /* PetesQuotes_WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		327BC315256581B0002EFDDF /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327BC314256581B0002EFDDF /* Settings.swift */; };
+		327BC319256581EF002EFDDF /* QuoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327BC318256581EF002EFDDF /* QuoteView.swift */; };
+		327BC31C25658273002EFDDF /* QuoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327BC2F325656106002EFDDF /* QuoteService.swift */; };
+		327BC31F25658277002EFDDF /* QuoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327BC318256581EF002EFDDF /* QuoteView.swift */; };
+		327BC3222565827B002EFDDF /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327BC314256581B0002EFDDF /* Settings.swift */; };
+		327BC326256582A8002EFDDF /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 327BC325256582A8002EFDDF /* Alamofire */; };
+		32C4A564256811BB00C7B3D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3210D1E62564505600179167 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		327BC30B25658197002EFDDF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3210D1D72564505500179167 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 327BC2FE25658196002EFDDF;
+			remoteInfo = PetesQuotes_WidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		327BC31125658197002EFDDF /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				327BC30D25658197002EFDDF /* PetesQuotes_WidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3210D1DF2564505500179167 /* PetesQuotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetesQuotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3210D1E22564505600179167 /* PetesQuotesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetesQuotesApp.swift; sourceTree = "<group>"; };
+		3210D1E42564505600179167 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3210D1E62564505600179167 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3210D1E92564505600179167 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3210D1EB2564505600179167 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3275BC692566C69A00A16EE3 /* PetesQuotes.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PetesQuotes.entitlements; sourceTree = "<group>"; };
+		3275BC6C2566C6D200A16EE3 /* PetesQuotes_WidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PetesQuotes_WidgetExtension.entitlements; sourceTree = "<group>"; };
+		327BC2F325656106002EFDDF /* QuoteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteService.swift; sourceTree = "<group>"; };
+		327BC2FF25658196002EFDDF /* PetesQuotes_WidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PetesQuotes_WidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		327BC30125658196002EFDDF /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		327BC30325658196002EFDDF /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		327BC30625658196002EFDDF /* PetesQuotes_Widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetesQuotes_Widget.swift; sourceTree = "<group>"; };
+		327BC30825658197002EFDDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		327BC30A25658197002EFDDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		327BC314256581B0002EFDDF /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		327BC318256581EF002EFDDF /* QuoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3210D1DC2564505500179167 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				327BC2F8256561ED002EFDDF /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		327BC2FC25658196002EFDDF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				327BC326256582A8002EFDDF /* Alamofire in Frameworks */,
+				327BC30425658196002EFDDF /* SwiftUI.framework in Frameworks */,
+				327BC30225658196002EFDDF /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3210D1D62564505500179167 = {
+			isa = PBXGroup;
+			children = (
+				3210D1E12564505500179167 /* PetesQuotes */,
+				327BC30525658196002EFDDF /* PetesQuotes_Widget */,
+				327BC30025658196002EFDDF /* Frameworks */,
+				3210D1E02564505500179167 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3210D1E02564505500179167 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3210D1DF2564505500179167 /* PetesQuotes.app */,
+				327BC2FF25658196002EFDDF /* PetesQuotes_WidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3210D1E12564505500179167 /* PetesQuotes */ = {
+			isa = PBXGroup;
+			children = (
+				3210D1E22564505600179167 /* PetesQuotesApp.swift */,
+				3210D1E42564505600179167 /* ContentView.swift */,
+				327BC2F325656106002EFDDF /* QuoteService.swift */,
+				327BC318256581EF002EFDDF /* QuoteView.swift */,
+				327BC314256581B0002EFDDF /* Settings.swift */,
+				3210D1E62564505600179167 /* Assets.xcassets */,
+				3210D1EB2564505600179167 /* Info.plist */,
+				3275BC692566C69A00A16EE3 /* PetesQuotes.entitlements */,
+				3210D1E82564505600179167 /* Preview Content */,
+			);
+			path = PetesQuotes;
+			sourceTree = "<group>";
+		};
+		3210D1E82564505600179167 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3210D1E92564505600179167 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		327BC30025658196002EFDDF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				327BC30125658196002EFDDF /* WidgetKit.framework */,
+				327BC30325658196002EFDDF /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		327BC30525658196002EFDDF /* PetesQuotes_Widget */ = {
+			isa = PBXGroup;
+			children = (
+				327BC30625658196002EFDDF /* PetesQuotes_Widget.swift */,
+				327BC30825658197002EFDDF /* Assets.xcassets */,
+				3275BC6C2566C6D200A16EE3 /* PetesQuotes_WidgetExtension.entitlements */,
+				327BC30A25658197002EFDDF /* Info.plist */,
+			);
+			path = PetesQuotes_Widget;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3210D1DE2564505500179167 /* PetesQuotes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3210D1EE2564505600179167 /* Build configuration list for PBXNativeTarget "PetesQuotes" */;
+			buildPhases = (
+				3210D1DB2564505500179167 /* Sources */,
+				3210D1DC2564505500179167 /* Frameworks */,
+				3210D1DD2564505500179167 /* Resources */,
+				327BC31125658197002EFDDF /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				327BC30C25658197002EFDDF /* PBXTargetDependency */,
+			);
+			name = PetesQuotes;
+			packageProductDependencies = (
+				327BC2F7256561ED002EFDDF /* Alamofire */,
+			);
+			productName = PetesQuotes;
+			productReference = 3210D1DF2564505500179167 /* PetesQuotes.app */;
+			productType = "com.apple.product-type.application";
+		};
+		327BC2FE25658196002EFDDF /* PetesQuotes_WidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 327BC30E25658197002EFDDF /* Build configuration list for PBXNativeTarget "PetesQuotes_WidgetExtension" */;
+			buildPhases = (
+				327BC2FB25658196002EFDDF /* Sources */,
+				327BC2FC25658196002EFDDF /* Frameworks */,
+				327BC2FD25658196002EFDDF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PetesQuotes_WidgetExtension;
+			packageProductDependencies = (
+				327BC325256582A8002EFDDF /* Alamofire */,
+			);
+			productName = PetesQuotes_WidgetExtension;
+			productReference = 327BC2FF25658196002EFDDF /* PetesQuotes_WidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3210D1D72564505500179167 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					3210D1DE2564505500179167 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					327BC2FE25658196002EFDDF = {
+						CreatedOnToolsVersion = 12.2;
+					};
+				};
+			};
+			buildConfigurationList = 3210D1DA2564505500179167 /* Build configuration list for PBXProject "PetesQuotes" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3210D1D62564505500179167;
+			packageReferences = (
+				327BC2F6256561ED002EFDDF /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
+			productRefGroup = 3210D1E02564505500179167 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3210D1DE2564505500179167 /* PetesQuotes */,
+				327BC2FE25658196002EFDDF /* PetesQuotes_WidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3210D1DD2564505500179167 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3210D1EA2564505600179167 /* Preview Assets.xcassets in Resources */,
+				3210D1E72564505600179167 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		327BC2FD25658196002EFDDF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				327BC30925658197002EFDDF /* Assets.xcassets in Resources */,
+				32C4A564256811BB00C7B3D5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3210D1DB2564505500179167 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3210D1E52564505600179167 /* ContentView.swift in Sources */,
+				327BC319256581EF002EFDDF /* QuoteView.swift in Sources */,
+				327BC2F425656106002EFDDF /* QuoteService.swift in Sources */,
+				327BC315256581B0002EFDDF /* Settings.swift in Sources */,
+				3210D1E32564505600179167 /* PetesQuotesApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		327BC2FB25658196002EFDDF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				327BC31C25658273002EFDDF /* QuoteService.swift in Sources */,
+				327BC31F25658277002EFDDF /* QuoteView.swift in Sources */,
+				327BC3222565827B002EFDDF /* Settings.swift in Sources */,
+				327BC30725658196002EFDDF /* PetesQuotes_Widget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		327BC30C25658197002EFDDF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 327BC2FE25658196002EFDDF /* PetesQuotes_WidgetExtension */;
+			targetProxy = 327BC30B25658197002EFDDF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3210D1EC2564505600179167 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3210D1ED2564505600179167 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3210D1EF2564505600179167 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PetesQuotes/PetesQuotes.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"PetesQuotes/Preview Content\"";
+				DEVELOPMENT_TEAM = DF5H9M9376;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = PetesQuotes/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.keaura.PetesQuotes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3210D1F02564505600179167 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PetesQuotes/PetesQuotes.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"PetesQuotes/Preview Content\"";
+				DEVELOPMENT_TEAM = DF5H9M9376;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = PetesQuotes/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.keaura.PetesQuotes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		327BC30F25658197002EFDDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = PetesQuotes_Widget/PetesQuotes_WidgetExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DF5H9M9376;
+				INFOPLIST_FILE = PetesQuotes_Widget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.keaura.PetesQuotes.PetesQuotes-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		327BC31025658197002EFDDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = PetesQuotes_Widget/PetesQuotes_WidgetExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DF5H9M9376;
+				INFOPLIST_FILE = PetesQuotes_Widget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.keaura.PetesQuotes.PetesQuotes-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3210D1DA2564505500179167 /* Build configuration list for PBXProject "PetesQuotes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3210D1EC2564505600179167 /* Debug */,
+				3210D1ED2564505600179167 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3210D1EE2564505600179167 /* Build configuration list for PBXNativeTarget "PetesQuotes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3210D1EF2564505600179167 /* Debug */,
+				3210D1F02564505600179167 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		327BC30E25658197002EFDDF /* Build configuration list for PBXNativeTarget "PetesQuotes_WidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				327BC30F25658197002EFDDF /* Debug */,
+				327BC31025658197002EFDDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		327BC2F6256561ED002EFDDF /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		327BC2F7256561ED002EFDDF /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 327BC2F6256561ED002EFDDF /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		327BC325256582A8002EFDDF /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 327BC2F6256561ED002EFDDF /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 3210D1D72564505500179167 /* Project object */;
+}
