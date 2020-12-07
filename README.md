@@ -4,7 +4,7 @@ This repository contains an Xcode project for an app and its widget called "Pete
 
 Unlike most apps, the focus here is on the widget. The app just provides some customization of the widget. If you want to add a widget to your app, this is a good place to start as I cover the basics.
 
-> You can find out more on my blog at https://www.keaura.com/blog.
+> You can find out more on my blog at https://www.keaura.com/blog/widgets-with-swiftui.
 
 The project has two targets: the app and the widget. This project shows you:
 
@@ -21,4 +21,4 @@ The app and widget use Alamofire to handle the remote call and data; you can use
 
 Once you've got the project and built it, you run the widget using its own Xcode scheme, `PetesQuotes_WidgetExtension`. This will install the widget in the simulator or device. You can stop the task once it has been started.
 
-All three widget sizes are supported. The widget adjusts the text size and position of its graphics based on the size of the widget.
+Give the blog article a read to get more insight.
